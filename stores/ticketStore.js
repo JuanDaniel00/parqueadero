@@ -106,7 +106,8 @@ export const useTicketStore = defineStore("ticket", {
 
         const { data, error } = await supabaseClient
           .from("tickets")
-          .insert(dbTicket);
+          .insert(dbTicket)
+          .select();
 
         if (error) {
           throw error;
@@ -115,7 +116,7 @@ export const useTicketStore = defineStore("ticket", {
         // Recargar tickets para obtener el nuevo
         await this.loadTickets();
 
-        return data[0];
+        return data ? data[0] : null;
       } catch (error) {
         this.error = error.message;
         console.error("Error adding ticket:", error);
