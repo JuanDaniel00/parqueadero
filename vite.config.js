@@ -10,12 +10,4 @@ export default defineConfig({
     }),
     quasar(),
   ],
-  build: {
-    rollupOptions: {
-      external: [],
-    },
-  },
-  optimizeDeps: {
-    include: ['@supabase/supabase-js'],
-  },
 });

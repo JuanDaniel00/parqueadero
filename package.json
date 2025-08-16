@@ -13,7 +13,7 @@
     "@supabase/supabase-js": "^2.55.0",
     "axios": "^1.7.3",
     "date-fns": "^3.6.0",
-    "pinia": "^2.2.4",
+    "pinia": "^3.0.0",
     "pinia-plugin-persistedstate": "^4.1.2",
     "quasar": "^2.16.5",
     "vue": "^3.4.29",
