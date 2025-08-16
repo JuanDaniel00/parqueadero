@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.12",
+    "@supabase/supabase-js": "^2.55.0",
     "axios": "^1.7.3",
     "date-fns": "^3.6.0",
     "pinia": "^2.2.4",
